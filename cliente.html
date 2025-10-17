@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Área do Cliente - Locadora de Carros Premium</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://copilot.microsoft.com/th/id/BCO.e988aa33-e133-4336-9a75-6b5eb72eb0f8.png" alt="Logo Locadora">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar ao Início</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Área do Cliente</h1>
+    <p>Gerencie suas reservas e cadastros</p>
+  </section>
+
+  <section id="login">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+    <p style="text-align:center;">Ainda não tem conta? <a href="#cadastro">Cadastre-se</a></p>
+  </section>
+
+  <section id="cadastro">
+    <h2>Cadastro de Cliente</h2>
+    <form id="cadastroForm">
+      <input type="text" placeholder="Nome Completo" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="Telefone" required />
+      <input type="text" placeholder="CPF ou CNPJ" required />
+      <button type="submit">Cadastrar</button>
+    </form>
+  </section>
+
+  <section id="reserva">
+    <h2>Reservar Veículo</h2>
+    <form id="reservaForm">
+      <select required>
+        <option value="">Selecione o tipo de veículo</option>
+        <option value="economico">Econômico</option>
+        <option value="suv">SUV</option>
+        <option value="luxo">Luxo</option>
+      </select>
+      <input type="date" placeholder="Data de Retirada" required />
+      <input type="date" placeholder="Data de Devolução" required />
+      <button type="submit">Reservar</button>
+    </form>
+  </section>
+
+  <section id="revisao">
+    <h2>Agendar Revisão</h2>
+    <form id="revisaoForm">
+      <input type="text" placeholder="Placa do veículo" required />
+      <input type="text" placeholder="Descrição do problema" required />
+      <input type="date" required />
+      <button type="submit">Agendar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Locadora de Carros Premium. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", e => {
+      e.preventDefault();
+      alert("Login simulado com sucesso!");
+    });
+    document.getElementById("cadastroForm").addEventListener("submit", e => {
+      e.preventDefault();
+      alert("Cadastro realizado com sucesso!");
+    });
+    document.getElementById("reservaForm").addEventListener("submit", e => {
+      e.preventDefault();
+      alert("Reserva confirmada!");
+    });
+    document.getElementById("revisaoForm").addEventListener("submit", e => {
+      e.preventDefault();
+      alert("Revisão agendada!");
+    });
+  </script>
+</body>
+</html>
